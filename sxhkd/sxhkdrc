@@ -140,4 +140,4 @@ XF86AudioMicMute
 
 # Change volume
 XF86Audio{Lower,Raise}Volume
-	pactl set-sink-volume @DEFAULT_SINK@ {+,-}2%
+	pactl set-sink-volume @DEFAULT_SINK@ {-,+}2%
