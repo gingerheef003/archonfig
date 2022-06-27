@@ -4,3 +4,6 @@ colorscheme murphy
 " Syntax highlighting
 filetype plugin on
 syntax on
+
+" Indentation
+:filetype indent on
