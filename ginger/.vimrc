@@ -1,9 +1,22 @@
 " Colorscheme to be used
-colorscheme murphy
+colorscheme murphy 
 
 " Syntax highlighting
 filetype plugin on
 syntax on
 
 " Indentation
-:filetype indent on
+filetype indent on
+
+" Mouse
+set ttymouse=sgr
+set mouse=a
+
+" Traverse line breaks
+set whichwrap=b,s,<,>,[,]
+
+" Line numbers
+set number
+
+" Setting background to which colors should look good on
+set background=dark
