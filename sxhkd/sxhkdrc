@@ -123,6 +123,10 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+#
+# custom
+#
+
 # Firefox Launcher
 super + shift + f ; {g,h,j,k}
 	firefox -P {"Govind G S","Gatter Heem","Ginger Heef","ME21B065"}
