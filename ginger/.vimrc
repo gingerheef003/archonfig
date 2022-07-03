@@ -8,10 +8,6 @@ syntax on
 " Indentation
 filetype indent on
 
-" Tab and Indent-shift width
-set tabstop=4
-set shiftwidth=4
-
 " Mouse
 set ttymouse=sgr
 set mouse=a
@@ -24,6 +20,11 @@ set number
 
 " Setting background to which colors should look good on
 set background=dark
+
+" Indent Specifications
+set tabstop=4
+set shiftwidth=4
+set shiftround
 
 "
 " Indentation Mappings
