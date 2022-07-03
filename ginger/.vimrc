@@ -33,9 +33,8 @@ set tabstop=4
 set shiftwidth=4
 set shiftround
 
-"
 " Indentation Mappings
-"
+"----------------------
 
 
 " Repeat indentation without removing selection in Visual mode
