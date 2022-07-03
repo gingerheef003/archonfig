@@ -15,8 +15,9 @@ set mouse=a
 " Traverse line breaks
 set whichwrap=b,s,<,>,[,]
 
-" Line numbers
+" Line numbers and CursorLine
 set number
+set cursorline
 
 " Setting background to which colors should look good on
 set background=dark
