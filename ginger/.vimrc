@@ -1,12 +1,15 @@
 " Colorscheme to be used
 colorscheme murphy 
 
-" Syntax highlighting
-filetype plugin on
-syntax on
+" Determine filetype
+if has('filetype')
+	filetype indent plugin on
+endif
 
-" Indentation
-filetype indent on
+" Syntax highlighting
+if has('syntax')
+	syntax on
+endif
 
 " Mouse
 set ttymouse=sgr
