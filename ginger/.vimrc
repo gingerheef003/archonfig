@@ -8,8 +8,9 @@ syntax on
 " Indentation
 filetype indent on
 
-" Tab width
+" Tab and Indent-shift width
 set tabstop=4
+set shiftwidth=4
 
 " Mouse
 set ttymouse=sgr
