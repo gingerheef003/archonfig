@@ -28,6 +28,9 @@ set showcmd
 " Setting background to which colors should look good on
 set background=dark
 
+" Setting cursor scroll off
+set scrolloff=5
+
 " Indent Specifications
 set tabstop=4
 set shiftwidth=4
