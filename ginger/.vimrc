@@ -19,6 +19,9 @@ set whichwrap=b,s,<,>,[,]
 set number
 set cursorline
 
+" Last Line
+set showcmd
+
 " Setting background to which colors should look good on
 set background=dark
 
