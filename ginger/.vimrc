@@ -36,21 +36,21 @@ set tabstop=4
 set shiftwidth=4
 set shiftround
 
+
 " Indentation Mappings
 "----------------------
 
-
 " Repeat indentation without removing selection in Visual mode
-vnoremap > >gv
-vnoremap < <gv
+vnoremap	>	>gv
+vnoremap	<	<gv
 
 " Adding Tab Shift-Tab for indent in Normal mode
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
+nnoremap	<Tab>	>>_
+nnoremap	<S-Tab>	<<_
 
 " Shift-Tab in Insert mode
-inoremap <S-Tab> <C-D> 
+inoremap	<S-Tab>	<C-D> 
 
 " Adding Tab Shift-Tab for indent in Visual mode
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
+vnoremap	<Tab>	>gv
+vnoremap	<S-Tab>	<gv
