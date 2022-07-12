@@ -1,10 +1,11 @@
 " Colorscheme to be used
 colorscheme murphy 
 
-" Determine filetype
+" Determine filetype to help indent
 if has('filetype')
 	filetype indent plugin on
 endif
+set autoindent
 
 " Syntax highlighting
 if has('syntax')
@@ -54,3 +55,34 @@ inoremap	<S-Tab>	<C-D>
 " Adding Tab Shift-Tab for indent in Visual mode
 vnoremap	<Tab>	>gv
 vnoremap	<S-Tab>	<gv
+
+
+" Automatically Append Closing Characters
+"-----------------------------------------
+" Use <C-v> before to escape automatic-append
+
+" {
+inoremap	{		{}<Left>
+inoremap	{<CR>	{<CR>}<Esc>O<Tab>
+inoremap	{;<CR>	{<CR>};<Esc>O<Tab>
+inoremap	{}		{}
+
+" [
+inoremap	[		[]<Left>
+inoremap	[<CR>	[<CR>]<Esc>O<Tab>
+inoremap	[;<CR>	[<CR>];<Esc>O<Tab>
+inoremap	[]		[]
+
+" (
+inoremap	(		()<Left>
+inoremap	(<CR>	(<CR>)<Esc>O<Tab>
+inoremap	(;<CR>	(<CR>);<Esc>O<Tab>
+inoremap	()		()
+
+" "
+inoremap	"		""<Left>
+inoremap	""		""
+
+" '
+inoremap	'		''<Left>
+inoremap	''		''
