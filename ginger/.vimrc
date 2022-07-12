@@ -41,6 +41,25 @@ set shiftwidth=4
 set shiftround
 
 
+" Setting Status Line
+"---------------------
+
+" Clear
+set statusline=
+
+" Left Side
+set statusline+=\ %F%m\ %y%r
+
+" Divider
+set statusline+=%=
+
+" Right Side
+set statusline+=%b\ \ 0x%B\ \ %l,%c%V\ \ %p%%
+
+" Show Status Line
+set laststatus=2
+
+
 " Indentation Mappings
 "----------------------
 
