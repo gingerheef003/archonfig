@@ -89,3 +89,9 @@ inoremap	""		""
 " '
 inoremap	'		''<Left>
 inoremap	''		''
+
+
+" Saving a file
+nnoremap		<F12>	:up<CR>
+inoremap		<F12>	<C-o>:up<CR>
+vnoremap		<F12>	<C-c>:up<CR>gv
