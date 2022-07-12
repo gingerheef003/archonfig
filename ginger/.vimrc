@@ -5,7 +5,10 @@ colorscheme murphy
 if has('filetype')
 	filetype indent plugin on
 endif
+
+" Setting cindent
 set autoindent
+set cindent
 
 " Syntax highlighting
 if has('syntax')
@@ -63,20 +66,20 @@ vnoremap	<S-Tab>	<gv
 
 " {
 inoremap	{		{}<Left>
-inoremap	{<CR>	{<CR>}<Esc>O<Tab>
-inoremap	{;<CR>	{<CR>};<Esc>O<Tab>
+inoremap	{<CR>	{<CR>}<Esc>O
+inoremap	{;<CR>	{<CR>};<Esc>O
 inoremap	{}		{}
 
 " [
 inoremap	[		[]<Left>
-inoremap	[<CR>	[<CR>]<Esc>O<Tab>
-inoremap	[;<CR>	[<CR>];<Esc>O<Tab>
+inoremap	[<CR>	[<CR>]<Esc>O
+inoremap	[;<CR>	[<CR>];<Esc>O
 inoremap	[]		[]
 
 " (
 inoremap	(		()<Left>
-inoremap	(<CR>	(<CR>)<Esc>O<Tab>
-inoremap	(;<CR>	(<CR>);<Esc>O<Tab>
+inoremap	(<CR>	(<CR>)<Esc>O
+inoremap	(;<CR>	(<CR>);<Esc>O
 inoremap	()		()
 
 " "
