@@ -15,6 +15,9 @@ if has('syntax')
 	syntax on
 endif
 
+" Better command-line completion
+set wildmenu
+
 " Mouse
 set ttymouse=sgr
 set mouse=a
