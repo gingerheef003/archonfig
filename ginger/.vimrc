@@ -43,18 +43,22 @@ set shiftround
 
 " Setting Status Line
 "---------------------
+" Format = %[0][-][minwidth].[maxwidth]{item}
 
 " Clear
 set statusline=
 
 " Left Side
+set statusline+=%#PMenuSel#
+set statusline+=%{g:gitbranchsl} 
+set statusline+=%#CursorColumn#
 set statusline+=\ %F%m\ %y%r
 
 " Divider
 set statusline+=%=
 
 " Right Side
-set statusline+=%b\ \ 0x%B\ \ %l,%c%V\ \ %p%%
+set statusline+=%b\ %3l,%-3c\ %3p%%
 
 " Show Status Line
 set laststatus=2
@@ -114,3 +118,20 @@ inoremap	''		''
 nnoremap		<F12>	:up<CR>
 inoremap		<F12>	<C-o>:up<CR>
 vnoremap		<F12>	<C-c>:up<CR>gv
+
+
+" Variables
+"-----------
+
+let g:gitbranchsl = ''
+
+
+" Custom Functions
+"------------------
+
+" To get git branch for statusline
+function! UpdateGitBranch()
+	let l:gitbranch = system("git branch --show-current 2>/dev/null | tr -d '\n'")
+	let g:gitbranchsl = strlen(l:gitbranch) > 0 ? '  '.l:gitbranch.' ' : ''
+endfunction
+call UpdateGitBranch()
