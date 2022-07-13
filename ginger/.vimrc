@@ -116,10 +116,18 @@ inoremap	'		''<Left>
 inoremap	''		''
 
 
+" Function Key Mappings
+"-----------------------
+
 " Saving a file
-nnoremap		<F12>	:up<CR>
-inoremap		<F12>	<C-o>:up<CR>
-vnoremap		<F12>	<C-c>:up<CR>gv
+nnoremap		<F12>	:update<CR>
+inoremap		<F12>	<C-o>:update<CR>
+vnoremap		<F12>	<C-c>:update<CR>gv
+
+" Reload configuration
+nnoremap		<F5>	:source $MYVIMRC<CR>
+inoremap		<F5>	<C-o>:source $MYVIMRC<CR>
+vnoremap		<F5>	<C-c>:source $MYVIMRC<CR>gv
 
 
 " Variables
