@@ -36,6 +36,8 @@ set background=dark
 set scrolloff=5
 
 " Indent Specifications
+"-----------------------
+
 set tabstop=4
 set shiftwidth=4
 set shiftround
@@ -135,3 +137,9 @@ function! UpdateGitBranch()
 	let g:gitbranchsl = strlen(l:gitbranch) > 0 ? '  '.l:gitbranch.' ' : ''
 endfunction
 call UpdateGitBranch()
+
+
+" Custom highlight
+"------------------
+
+highlight Comment cterm=italic
