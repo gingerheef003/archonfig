@@ -145,3 +145,7 @@ XF86AudioMicMute
 # Change volume
 XF86Audio{Lower,Raise}Volume
 	pactl set-sink-volume @DEFAULT_SINK@ {-,+}2%
+
+# Media controls
+super + shift + {Left,Down,Right}
+	~/.config/sxhkd/media_control.sh {Previous,PlayPause,Next}
