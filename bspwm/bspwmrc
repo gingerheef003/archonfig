@@ -8,6 +8,9 @@ feh --bg-scale --randomize /home/ginger/Pictures/WPs/
 # Picom
 picom -b
 
+# Dunst
+/usr/bin/dunst &
+
 # Focus and Pointer
 bspc config focus_follows_pointer true
 bspc config pointer_follows_focus true
