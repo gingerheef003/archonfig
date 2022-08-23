@@ -3,13 +3,16 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Wallpaper
-feh --bg-scale --randomize /home/ginger/Pictures/WPs/
+feh --bg-scale --randomize $HOME/Pictures/WPs/
 
 # Picom
 picom -b
 
 # Dunst
 /usr/bin/dunst &
+
+# Polybar
+$HOME/.config/polybar/launch.sh
 
 # Focus and Pointer
 bspc config focus_follows_pointer true
