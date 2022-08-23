@@ -131,6 +131,9 @@ super + {Left,Down,Up,Right}
 super + shift + f ; {g,h,j,k}
 	firefox -P {"Govind G S","Gatter Heem","Ginger Heef","ME21B065"}
 
+# Brightness
+XF86MonBrightness{Up,Down}
+	xbacklight {+,-} 5
 
 # Media #
 
