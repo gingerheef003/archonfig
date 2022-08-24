@@ -133,7 +133,7 @@ super + shift + f ; {g,h,j,k}
 
 # Brightness
 XF86MonBrightness{Up,Down}
-	xbacklight {+,-} 5
+	$HOME/.config/sxhkd/brightness_control.sh {up,down}
 
 # Media #
 
