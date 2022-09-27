@@ -1,3 +1,8 @@
+! Font
+URxvt.font: xft:Monospace:style=Regular:size=16:minspace=False
+URxvt.letterSpace: -1
+URxvt.lineSpace: -1
+
 ! Colors
 *.foreground: #ffffff
 *.background: #000000
