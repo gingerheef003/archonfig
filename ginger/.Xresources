@@ -1,8 +1,33 @@
+!! Appearance
+
 ! Font
 URxvt.font: xft:Monospace:style=Regular:size=16:minspace=False
+
+! Spacing
 URxvt.letterSpace: -1
 URxvt.lineSpace: -1
 
-! Colors
+
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
+
+! ScrollBar
+URxvt.scrollStyle: plain
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+
+! Misc
+URxvt.internalBorder: 12
+URxvt*depth: 32
+URxvt.background: [90]#2E3440
+URxvt*transparent: true
+URxvt*shading: 20
+URxvt.blurRadius: 5
+
+
+!! Colors
+
+! Basic
 *.foreground: #ffffff
 *.background: #000000
