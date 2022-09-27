@@ -31,3 +31,8 @@ URxvt.blurRadius: 5
 ! Basic
 *.foreground: #ffffff
 *.background: #000000
+
+
+!! ISO 14755 mode
+URxvt.iso14755: false
+URxvt.iso14755_52: false
