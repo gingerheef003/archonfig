@@ -51,8 +51,17 @@ set scrolloff=5
 " Hide buffer
 set hidden
 
-" Mappings
-:nnoremap <Leader>b :ls<CR>:b
+" Basic Mappings
+nnoremap <Leader>b :ls<CR>:b
+nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>N :bp<CR>
+
+" Number Mappings
+let i = 1
+while i <= 10
+	execute "nnoremap <Leader>" . i . " :b" . i ."<CR>"
+	let i += 1
+endwhile
 
 
 " Indent Specifications
