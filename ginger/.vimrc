@@ -1,3 +1,10 @@
+" Variables
+"-----------
+
+let g:gitbranchsl = ""
+let mapleader="\<Space>"
+
+
 " Colorscheme to be used
 colorscheme murphy 
 
@@ -45,7 +52,7 @@ set scrolloff=5
 set hidden
 
 " Mappings
-:nnoremap <Leader>b :ls<CR>:b<Space>
+:nnoremap <Leader>b :ls<CR>:b
 
 
 " Indent Specifications
@@ -146,13 +153,6 @@ vnoremap		<F5>	<C-c>:source $MYVIMRC<CR>gv
 "nnoremap		<F9>	:ls<CR>:b
 "inoremap		<F9>	<C-o>:ls<CR>:b
 "vnoremap		<F9>	<C-c>:ls<CR>:b
-
-
-" Variables
-"-----------
-
-let g:gitbranchsl = ''
-let mapleader=';'
 
 
 " Custom Functions
