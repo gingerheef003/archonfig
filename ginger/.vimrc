@@ -29,7 +29,7 @@ set whichwrap=b,s,<,>,[,]
 set number
 set cursorline
 
-" Last Line
+" Show partial commands on last line
 set showcmd
 
 " Setting background to which colors should look good on
@@ -38,7 +38,12 @@ set background=dark
 " Setting cursor scroll off
 set scrolloff=5
 
-" Indent Specifications
+" Hide buffer
+set hidden
+
+
+
+" Indent Specifications<F4><F4>
 "-----------------------
 
 set tabstop=4
@@ -131,6 +136,11 @@ vnoremap		<F12>	<C-c>:update<CR>gv
 nnoremap		<F5>	:source $MYVIMRC<CR>
 inoremap		<F5>	<C-o>:source $MYVIMRC<CR>
 vnoremap		<F5>	<C-c>:source $MYVIMRC<CR>gv
+
+"" Buffers
+"nnoremap		<F9>	:ls<CR>:b
+"inoremap		<F9>	<C-o>:ls<CR>:b
+"vnoremap		<F9>	<C-c>:ls<CR>:b
 
 
 " Variables
