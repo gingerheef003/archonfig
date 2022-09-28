@@ -94,6 +94,10 @@ set statusline+=%b\ %3l,%-3c\ %3p%%
 " Show Status Line
 set laststatus=2
 
+" Automate make views
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 
 " Indentation Mappings
 "----------------------
