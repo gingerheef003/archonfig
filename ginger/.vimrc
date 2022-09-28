@@ -38,12 +38,17 @@ set background=dark
 " Setting cursor scroll off
 set scrolloff=5
 
+" Buffer Settings
+"-----------------
+
 " Hide buffer
 set hidden
 
+" Mappings
+:nnoremap <Leader>b :ls<CR>:b<Space>
 
 
-" Indent Specifications<F4><F4>
+" Indent Specifications
 "-----------------------
 
 set tabstop=4
@@ -147,6 +152,7 @@ vnoremap		<F5>	<C-c>:source $MYVIMRC<CR>gv
 "-----------
 
 let g:gitbranchsl = ''
+let mapleader=';'
 
 
 " Custom Functions
