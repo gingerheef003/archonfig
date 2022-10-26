@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	urxvt	
 
 # program launcher
 super + @space
@@ -132,8 +132,8 @@ super + shift + f ; {g,h,j,k}
 	firefox -P {"Govind G S","Gatter Heem","Ginger Heef","ME21B065"}
 
 # Brightness
-XF86MonBrightness{Up,Down}
-	$HOME/.config/sxhkd/brightness_control.sh {up,down}
+XF86MonBrightness{Down,Up}
+	./brightness_control.sh {down,up}
 
 # Media #
 
@@ -147,8 +147,8 @@ XF86AudioMicMute
 
 # Change volume
 XF86Audio{Lower,Raise}Volume
-	pactl set-sink-volume @DEFAULT_SINK@ {-,+}2%
+	./volume_control.sh {lower,raise}
 
 # Media controls
 super + {shift + comma,shift + period,slash}
-	~/.config/sxhkd/media_control.sh {Previous,Next,PlayPause}
+	./media_control.sh {Previous,Next,PlayPause}
