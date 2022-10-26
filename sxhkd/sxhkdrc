@@ -133,7 +133,7 @@ super + shift + f ; {g,h,j,k}
 
 # Brightness
 XF86MonBrightness{Down,Up}
-	./brightness_control.sh {down,up}
+	$HOME/.config/sxhkd/brightness_control.sh {down,up}
 
 # Media #
 
@@ -147,8 +147,8 @@ XF86AudioMicMute
 
 # Change volume
 XF86Audio{Lower,Raise}Volume
-	./volume_control.sh {lower,raise}
+	$HOME/.config/sxhkd/volume_control.sh {lower,raise}
 
 # Media controls
 super + {shift + comma,shift + period,slash}
-	./media_control.sh {Previous,Next,PlayPause}
+	$HOME/.config/sxhkd/media_control.sh {Previous,Next,PlayPause}
