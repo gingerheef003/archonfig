@@ -23,7 +23,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -45,12 +45,12 @@
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 12
+    y: 12
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -381,16 +381,16 @@
   # When set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
-#cursor:
+cursor:
   # Cursor style
-  #style:
+  style:
     # Cursor shape
     #
     # Values for `shape`:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    #shape: Block
+    shape: Underline
 
     # Cursor blinking state
     #
@@ -399,7 +399,7 @@
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    #blinking: Off
+    blinking: On
 
   # Vi mode cursor style
   #
@@ -745,7 +745,7 @@
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
@@ -851,7 +851,7 @@
   #- { key: M,              mods: Command,                    action: Minimize              }
   #- { key: Q,              mods: Command,                    action: Quit                  }
   #- { key: W,              mods: Command,                    action: Quit                  }
-  #- { key: N,              mods: Command,                    action: SpawnNewInstance      }
+  - { key: N,              mods: Command,                    action: SpawnNewInstance      }
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
@@ -876,3 +876,86 @@
 
   # Print all received window events.
   #print_events: false
+
+draw_bold_text_with_bright_colors: true
+
+schemes:
+
+  # Cyberpunk-Neon colours 
+  cyberpunk_neon: &cpn
+    # Default colours
+    primary:
+      background: '0x000b1e'
+      foreground: '0x0abdc6'
+  
+    # Colors that should be used to draw the terminal cursor. If these are unset,
+    # the cursor colour will be the inverse of the cell colour.
+    # cursor:
+    #   text: '0x2e2e2d'
+    #   # text: '0x000000'
+    #   cursor: '0xffffff'
+  
+    # Normal colors
+    normal:
+      black:   '0x123e7c'
+      red:     '0xff0000'
+      green:   '0xd300c4'
+      yellow:  '0xf57800'
+      blue:    '0x123e7c'
+      magenta: '0x711c91'
+      cyan:    '0x0abdc6'
+      white:   '0xd7d7d5'
+  
+    # Bright colors
+    bright:
+      black:   '0x1c61c2'
+      red:     '0xff0000'
+      green:   '0xd300c4'
+      yellow:  '0xf57800'
+      blue:    '0x00ff00'
+      magenta: '0x711c91'
+      cyan:    '0x0abdc6'
+      white:   '0xd7d7d5'
+  
+    # dim colors
+    dim:
+      black:   '0x1c61c2'
+      red:     '0xff0000'
+      green:   '0xd300c4'
+      yellow:  '0xf57800'
+      blue:    '0x123e7c'
+      magenta: '0x711c91'
+      cyan:    '0x0abdc6'
+      white:   '0xd7d7d5'
+
+
+  # Colors (Blood Moon)
+  blood_moon: &bm
+    # Default colors
+    primary:
+      background: '#10100E'
+      foreground: '#C6C6C4'
+  
+    # Normal colors
+    normal:
+      black:   '#10100E'
+      red:     '#C40233'
+      green:   '#009F6B'
+      yellow:  '#FFD700'
+      blue:    '#0087BD'
+      magenta: '#9A4EAE'
+      cyan:    '#20B2AA'
+      white:   '#C6C6C4'
+  
+    # Bright colors
+    bright:
+      black:   '#696969'
+      red:     '#FF2400'
+      green:   '#03C03C'
+      yellow:  '#FDFF00'
+      blue:    '#007FFF'
+      magenta: '#FF1493'
+      cyan:    '#00CCCC'
+      white:   '#FFFAFA'
+
+colors: *bm
