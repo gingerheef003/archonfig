@@ -5,22 +5,20 @@ icon="/usr/share/icons/Adwaita/32x32/status/display-brightness-symbolic.symbolic
 file="/sys/class/backlight/intel_backlight/brightness"
 maxB=$(cat /sys/class/backlight/intel_backlight/max_brightness)
 
-bness=$(cat $file)
-
 function show_brightness {
-	bPerc=$((bness * 100 / maxB))
-	dunstify -r 548565 -i $icon -a "Brightness" -h int:value:$bPerc "$bPerc%"
+	bPerc=$(($(cat $file) * 100 / maxB))
+	dunstify -r 548565 -i $icon -a "Brightness" -h int:value:$bPerc "$bPerc%" "$1"
 }
 
 case $func in
-	up)
-		((bness+=maxB / 20))
-		echo $bness > $file
+	ac)
+		echo $((maxB * 80 / 100)) > $file
+		show_brightness "Plugged in"
 		;;
-	down)
-		((bness-=maxB / 20))
-		echo $bness > $file
+	bat)
+		echo $((maxB * 20 / 100)) > $file
+		show_brightness "On Battery"
 		;;
 esac
 
-show_brightness
+
