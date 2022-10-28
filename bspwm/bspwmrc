@@ -14,6 +14,9 @@ picom -b
 # Polybar
 $HOME/.config/polybar/launch.sh
 
+# Brightness
+$HOME/.scripts/brightness_control_startup.sh
+
 # Focus and Pointer
 bspc config focus_follows_pointer true
 
