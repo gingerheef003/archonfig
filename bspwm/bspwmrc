@@ -17,6 +17,9 @@ $HOME/.config/polybar/launch.sh
 # Brightness
 $HOME/.scripts/brightness_control_startup.sh
 
+# Fusuma
+/usr/bin/fusuma -d
+
 # Focus and Pointer
 bspc config focus_follows_pointer true
 

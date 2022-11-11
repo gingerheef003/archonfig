@@ -1,0 +1,34 @@
+swipe:
+  3:
+    left:
+      command: ~/.scripts/media_control.sh Previous
+    right:
+      command: ~/.scripts/media_control.sh Next
+    up:
+      update:
+        command: ~/.scripts/volume_control.sh raise
+        interval: 2
+    down:
+      update:
+        command: ~/.scripts/volume_control.sh lower
+        interval: 2
+  4:
+    left:
+      update:
+        command: bspc desktop -f next.occupied
+        interval: 3
+    right:
+      update:
+        command: bspc desktop -f prev.occupied
+        interval: 3
+    up:
+      command: bspc desktop -l next
+    down:
+      update:
+        command: dunstctl history-pop
+      end:
+        command: dunstctl close-all
+hold:
+  3:
+    command: ~/.scripts/media_control.sh PlayPause
+    threshold: 0
