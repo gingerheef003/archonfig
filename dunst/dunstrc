@@ -451,4 +451,12 @@
 #    appname = "some_volume_notifiers"
 #    set_stack_tag = "volume"
 #
+[volume]
+	stack_tag = "volume"
+	history_ignore = yes
+
+[brightness]
+	stack_tag = "bness"
+	history_ignore = yes
+
 # vim: ft=cfg
