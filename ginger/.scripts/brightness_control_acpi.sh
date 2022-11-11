@@ -7,7 +7,7 @@ maxB=$(cat /sys/class/backlight/intel_backlight/max_brightness)
 
 function show_brightness {
 	bPerc=$(($(cat $file) * 100 / maxB))
-	dunstify -r 548565 -i $icon -a "Brightness" -h int:value:$bPerc "$bPerc%" "$1"
+	dunstify -i $icon -a "Brightness" -h string:x-dunst-stack-tag:bness -h int:value:$bPerc "$bPerc%" "$1"
 }
 
 case $func in

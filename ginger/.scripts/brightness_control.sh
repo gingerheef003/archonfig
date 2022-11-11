@@ -9,7 +9,7 @@ bness=$(cat $file)
 
 function show_brightness {
 	bPerc=$((bness * 100 / maxB))
-	dunstify -r 548565 -i $icon -a "Brightness" -h int:value:$bPerc "$bPerc%"
+	dunstify -i $icon -a "Brightness" -h string:x-dunst-stack-tag:bness -h int:value:$bPerc "$bPerc%"
 }
 
 case $func in
