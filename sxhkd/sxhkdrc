@@ -86,7 +86,7 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
-
+{}
 #
 # preselect
 #
@@ -134,6 +134,10 @@ super + shift + f ; {g,h,j,k}
 # Brightness
 XF86MonBrightness{Down,Up}
 	$HOME/.scripts/brightness_control.sh {down,up}
+
+# File Manager
+super + e
+	alacritty -e nnn -do
 
 # Media #
 
