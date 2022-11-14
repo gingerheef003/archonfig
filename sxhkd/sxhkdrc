@@ -139,6 +139,10 @@ XF86MonBrightness{Down,Up}
 super + e
 	alacritty -e nnn -do
 
+# Scratchpad
+alt + Return
+	$HOME/.scripts/scratchpad.sh
+
 # Media #
 
 # Toggle mute

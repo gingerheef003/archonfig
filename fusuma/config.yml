@@ -24,10 +24,7 @@ swipe:
     up:
       command: bspc desktop -l next
     down:
-      update:
-        command: dunstctl history-pop
-      end:
-        command: dunstctl close-all
+      command: ~/.scripts/scratchpad.sh
 hold:
   3:
     command: ~/.scripts/media_control.sh PlayPause
