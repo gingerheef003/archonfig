@@ -25,6 +25,7 @@ swipe:
       command: bspc desktop -l next
     down:
       command: ~/.scripts/scratchpad.sh
+      threshold: 0.5
 hold:
   3:
     command: ~/.scripts/media_control.sh PlayPause

@@ -39,5 +39,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # Scratchpad
-bspc rule -a scratchpad sticky=on state=floating hidden=on
-alacritty --class scratchpad &
+bspc rule -a scratchpad sticky=on state=floating
