@@ -63,3 +63,16 @@ zle -N down-line-or-beginning-search
 # prompt theme
 autoload -Uz promptinit
 promptinit
+
+# Aliases
+alias sc="source $HOME/.zshrc"
+
+# Git Aliases
+alias g="git"
+alias gt="git status"
+alias ga="git add"
+alias gc="git commit -m"
+alias gl="git log --oneline"
+
+# Suffix Aliases
+alias -s txt=vim
