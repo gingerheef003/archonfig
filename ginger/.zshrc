@@ -76,5 +76,11 @@ alias ga="git add"
 alias gc="git commit -m"
 alias gl="git log --oneline"
 
+# ls Aliases
+alias l="ls --color"
+alias ll="ls --color -l"
+alias la="ls --color -la"
+alias t="tree"
+
 # Suffix Aliases
 alias -s txt=vim
