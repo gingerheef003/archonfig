@@ -141,7 +141,7 @@ XF86MonBrightness{Down,Up}
 
 # File Manager
 super + e
-	alacritty -e nnn -do
+	alacritty -e ranger
 
 # Scratchpad
 alt + Return
