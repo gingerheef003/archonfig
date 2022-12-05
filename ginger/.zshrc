@@ -74,8 +74,10 @@ alias g="git"
 alias gt="git status"
 alias ga="git add"
 alias gc="git commit -m"
+alias gca="git commit --amend"
 alias gl="git log --oneline"
 alias gd="git diff"
+alias gp="git push"
 
 # ls Aliases
 alias l="ls --color"
