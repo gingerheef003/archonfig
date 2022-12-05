@@ -12,7 +12,7 @@ super + @space
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd; $HOME/.scripts/config_reload.sh sxhkd
 
 #
 # bspwm hotkeys
