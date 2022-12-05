@@ -147,6 +147,10 @@ alt + Return
 super + shift + slash
 	$HOME/.scripts/sxhkd_help.sh
 
+# Screenshot
+super + shift + s
+	flameshot gui
+
 # Media #
 
 # Toggle mute
