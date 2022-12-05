@@ -143,6 +143,10 @@ super + e
 alt + Return
 	$HOME/.scripts/scratchpad.sh
 
+# Help
+super + shift + slash
+	$HOME/.scripts/sxhkd_help.sh
+
 # Media #
 
 # Toggle mute
