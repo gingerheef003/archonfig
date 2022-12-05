@@ -68,6 +68,7 @@ promptinit
 alias sc="source $HOME/.zshrc"
 alias c="cd $HOME/archonfig"
 alias d="cd $HOME/Downloads"
+alias v="vim"
 
 # Git Aliases
 alias g="git"
