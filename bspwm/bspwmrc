@@ -20,6 +20,9 @@ $HOME/.scripts/brightness_control_startup.sh
 # Fusuma
 /usr/bin/fusuma -d
 
+# Network Manager
+nm-applet &
+
 # Focus and Pointer
 bspc config focus_follows_pointer true
 
