@@ -63,6 +63,7 @@ zle -N down-line-or-beginning-search
 # prompt theme
 autoload -Uz promptinit
 promptinit
+prompt redhat
 
 # Aliases
 alias sc="source $HOME/.zshrc"
