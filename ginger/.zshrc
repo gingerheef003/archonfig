@@ -91,3 +91,9 @@ alias t="tree"
 
 # Suffix Aliases
 alias -s txt=vim
+
+
+# History
+export HISTFILE=~/.zsh_history
+export HISTSIZE=1024
+export SAVEHIST=1024
