@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Wallpaper
-feh --bg-scale --randomize $HOME/Pictures/WPs/
+feh --bg-scale --randomize $HOME/Pictures/WPs/room.jpg
 
 # Picom
 picom -b
@@ -22,6 +22,9 @@ $HOME/.scripts/brightness_control_startup.sh
 
 # Network Manager
 nm-applet &
+
+# Show Off
+$HOME/.scripts/show_off.sh
 
 # Focus and Pointer
 bspc config focus_follows_pointer true
