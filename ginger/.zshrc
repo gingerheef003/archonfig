@@ -70,8 +70,7 @@ alias sc="source $HOME/.zshrc"
 alias c="cd $HOME/archonfig"
 alias d="cd $HOME/Downloads"
 alias v="vim"
-alias p="sudo pacman"
-alias ps="sudo pacman -S"
+alias p="sudo pacman -S"
 alias pu="sudo pacman -Syu"
 
 # Git Aliases
