@@ -171,4 +171,4 @@ XF86Audio{Lower,Raise}Volume
 
 # Media controls
 super + {shift + comma,shift + period,slash}
-	$HOME/.scripts/media_control.sh {Previous,Next,PlayPause}
+	playerctl {previous,next,play-pause}

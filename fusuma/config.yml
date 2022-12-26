@@ -1,9 +1,9 @@
 swipe:
   3:
     left:
-      command: ~/.scripts/media_control.sh Previous
+      command: playerctl previous
     right:
-      command: ~/.scripts/media_control.sh Next
+      command: playerctl next
     up:
       update:
         command: ~/.scripts/volume_control.sh raise
@@ -28,5 +28,5 @@ swipe:
       threshold: 0.5
 hold:
   3:
-    command: ~/.scripts/media_control.sh PlayPause
+    command: playerctl play-pause
     threshold: 0
