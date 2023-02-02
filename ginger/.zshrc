@@ -69,7 +69,7 @@ prompt redhat
 alias sc="source $HOME/.zshrc"
 alias c="cd $HOME/archonfig"
 alias d="cd $HOME/Downloads"
-alias v="vim"
+alias v="nvim"
 alias p="sudo pacman -S"
 alias pu="sudo pacman -Syu"
 
