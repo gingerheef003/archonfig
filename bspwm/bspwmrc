@@ -24,7 +24,7 @@ $HOME/.scripts/brightness_control_startup.sh
 nm-applet &
 
 # Show Off
-$HOME/.scripts/show_off.sh
+# alacritty --hold -e $HOME/.scripts/show_off.sh &
 
 # Focus and Pointer
 bspc config focus_follows_pointer true
