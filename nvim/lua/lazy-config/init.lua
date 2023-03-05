@@ -13,4 +13,13 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({})
+require("lazy").setup({
+	'Shatur/neovim-ayu',
+	{ 'glepnir/dashboard-nvim',
+		event = 'VimEnter',
+		config = function()
+			require('dashboard').setup {}
+		end,
+		dependencies = { { 'nvim-tree/nvim-web-devicons' } },
+	}
+})
