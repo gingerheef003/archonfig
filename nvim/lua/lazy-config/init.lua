@@ -15,6 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	'Shatur/neovim-ayu',
+
 	{ 'glepnir/dashboard-nvim',
 		event = 'VimEnter',
 		config = function()
@@ -22,8 +23,23 @@ require("lazy").setup({
 		end,
 		dependencies = { { 'nvim-tree/nvim-web-devicons' } },
 	},
+
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
-	}
+	},
+
+	{
+		"windwp/nvim-autopairs",
+		config = function() require("nvim-autopairs").setup {} end
+	},
+
+	{ "windwp/nvim-ts-autotag" },
+
+	{ "RRethy/nvim-treesitter-endwise" },
+	
+	{ "mrjones2014/nvim-ts-rainbow" },
+
+	{ "lukas-reineke/indent-blankline.nvim" },
+
 })
