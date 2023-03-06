@@ -21,5 +21,9 @@ require("lazy").setup({
 			require('dashboard').setup {}
 		end,
 		dependencies = { { 'nvim-tree/nvim-web-devicons' } },
+	},
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
 	}
 })
