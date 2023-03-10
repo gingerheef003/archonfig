@@ -69,7 +69,8 @@ prompt redhat
 alias sc="source $HOME/.zshrc"
 alias c="cd $HOME/archonfig"
 alias d="cd $HOME/Downloads"
-alias v="nvim"
+alias v='vim'
+alias nv="nvim"
 alias p="sudo pacman -S"
 alias pu="sudo pacman -Syu"
 
@@ -101,3 +102,17 @@ export SAVEHIST=1024
 # Fish-like
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Aadding path
+export PATH=/home/ginger/.local/bin:$PATH
+
+# Virtual Environment
+if [[ -f ./venv/bin/activate ]]; then
+	source ./venv/bin/activate
+fi
+function cd() {
+	builtin cd $1
+	if [[ -f ./venv/bin/activate ]]; then
+		source ./venv/bin/activate
+	fi
+}
