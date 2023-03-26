@@ -53,6 +53,26 @@ require("lazy").setup({
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
 
+	{
+		'akinsho/bufferline.nvim',
+		version = 'v3.*',
+		dependencies = { 'nvim-tree/nvim-web-devicons' }
+	},
+	{
+	  "utilyre/barbecue.nvim",
+	  name = "barbecue",
+	  version = "*",
+	  dependencies = {
+	    "SmiteshP/nvim-navic",
+	    "nvim-tree/nvim-web-devicons",
+	  },
+	},
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' },
+		lazy = true,
+	},
+
 	{ 'williamboman/mason.nvim' },
 	{ 'williamboman/mason-lspconfig.nvim' },
 	{ 'neovim/nvim-lspconfig' },
