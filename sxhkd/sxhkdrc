@@ -132,8 +132,11 @@ super + {Left,Down,Up,Right}
 #
 
 # Firefox Launcher
-super + shift + f ; {g,h,j,k}
-	firefox -P {"Govind G S","Gatter Heem","Ginger Heef","ME21B065"}
+super + shift + {f,y} ; {g,h,k}
+	firefox {_,https://www.youtube.com} -P {"Govind G S","Gatter Heem","ME21B065"}
+
+super + shift + f ; j
+	firefox-developer-edition -P "Ginger Heef"
 
 # Brightness
 XF86MonBrightness{Down,Up}
@@ -170,5 +173,5 @@ XF86Audio{Lower,Raise}Volume
 	$HOME/.scripts/volume_control.sh {lower,raise}
 
 # Media controls
-super + {shift + comma,shift + period,slash}
-	playerctl {previous,next,play-pause}
+super + slash
+	$HOME/.scripts/playerctl_control.sh
