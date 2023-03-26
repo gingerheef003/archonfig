@@ -1,7 +1,11 @@
 !! Appearance
 
 ! Font
-URxvt.font: xft:Monospace:style=Regular:size=16:minspace=False
+URxvt.font: \
+	xft:Monospace:style=Regular:size=16:minspace=False, \
+	Font Awesome 6 Free:style=Regular, \
+	Font Awesome 6 Free:style=Solid, \
+	Font Awesome 6 Brands:style=Regular
 
 ! Spacing
 URxvt.letterSpace: -1
@@ -36,3 +40,13 @@ URxvt.blurRadius: 5
 !! ISO 14755 mode
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+
+!!
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+

@@ -98,6 +98,7 @@ alias -s txt=vim
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1024
 export SAVEHIST=1024
+setopt HIST_IGNORE_SPACE
 
 # Fish-like
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
