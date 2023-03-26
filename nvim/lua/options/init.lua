@@ -30,6 +30,7 @@ vim.g.mapleader = ' '
 
 -- functions
 vim.keymap.set({'', 'i'}, '<F2>', '<cmd>write<cr>', {desc = 'Save'})
+vim.keymap.set({'', 'i'}, '<F3>', '<cmd>NvimTreeToggle<cr>', {desc = 'Explorer'})
 vim.keymap.set({'', 'i'}, '<F4>', '<cmd>q<cr>', {desc = 'Quit'})
 
 
@@ -37,3 +38,6 @@ vim.keymap.set({'', 'i'}, '<F4>', '<cmd>q<cr>', {desc = 'Quit'})
 vim.keymap.set({''}, '<leader>b', '<cmd>ls<cr>', {desc = 'Next Buffer'})
 vim.keymap.set({''}, '<leader>n', '<cmd>bn<cr>', {desc = 'Next Buffer'})
 vim.keymap.set({''}, '<leader>N', '<cmd>bp<cr>', {desc = 'Previous Buffer'})
+
+-- sudo edit enable
+vim.keymap.set('c','W',"<esc>:lua require'utils'.sudo_write()<CR>", { silent = true })
