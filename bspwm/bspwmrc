@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Wallpaper
-feh --bg-scale --randomize $HOME/Pictures/WPs/room.jpg
+feh --bg-scale --randomize $HOME/Pictures/WPs/electric.png
 
 # Picom
 picom -b
@@ -14,14 +14,14 @@ picom -b
 # Polybar
 $HOME/.config/polybar/launch.sh
 
-# Brightness
-$HOME/.scripts/brightness_control_startup.sh
+# libinput-gestures
+libinput-gestures-setup start
 
-# Fusuma
-/usr/bin/fusuma -d
+# Brightness
+#$HOME/.scripts/brightness_control_startup.sh
 
 # Network Manager
-nm-applet &
+#nm-applet &
 
 # Show Off
 # alacritty --hold -e $HOME/.scripts/show_off.sh &
