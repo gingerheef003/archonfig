@@ -476,4 +476,18 @@
 	foreground = "#000000"
 	frame_color = "#000000"
 
+[instagram]
+	desktop_entry = "Firefox"
+	summary = "*Instagram*"
+	background = "#833ab4"
+	foreground = "#000000"
+	frame_color = "#833ab4"
+
+[reddit]
+	desktop_entry = "Firefox"
+	summary = "*reddit"
+	background = "#ff4500"
+	foreground = "#000000"
+	frame_color = "#ff4500"
+
 # vim: ft=cfg
