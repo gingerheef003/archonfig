@@ -69,6 +69,7 @@ prompt redhat
 alias sc="source $HOME/.zshrc"
 alias c="cd $HOME/archonfig"
 alias d="cd $HOME/Downloads"
+alias D="cd $HOME/Documents"
 alias v='vim'
 alias nv="nvim"
 alias p="sudo pacman -S"
@@ -82,7 +83,9 @@ alias gc="git commit -m"
 alias gca="git commit --amend"
 alias gl="git log --oneline"
 alias gd="git diff"
+alias gcl="git clone"
 alias gp="git push"
+alias gr="git reflog"
 
 # ls Aliases
 alias l="ls --color"

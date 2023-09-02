@@ -9,7 +9,8 @@ feh --bg-scale --randomize $HOME/Pictures/WPs/electric.png
 picom -b
 
 # Dunst
-/usr/bin/dunst &
+# /usr/bin/dunst &
+/usr/bin/wired &
 
 # Polybar
 $HOME/.config/polybar/launch.sh
