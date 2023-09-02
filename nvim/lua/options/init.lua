@@ -38,6 +38,7 @@ vim.keymap.set({'', 'i'}, '<F4>', '<cmd>q<cr>', {desc = 'Quit'})
 vim.keymap.set({''}, '<leader>b', '<cmd>ls<cr>', {desc = 'Next Buffer'})
 vim.keymap.set({''}, '<leader>n', '<cmd>bn<cr>', {desc = 'Next Buffer'})
 vim.keymap.set({''}, '<leader>N', '<cmd>bp<cr>', {desc = 'Previous Buffer'})
+vim.keymap.set({''}, '<leader>d', '<cmd>bd<cr>', {desc = 'Delete Buffer'})
 
 -- sudo edit enable
 vim.keymap.set('c','W',"<esc>:lua require'utils'.sudo_write()<CR>", { silent = true })
