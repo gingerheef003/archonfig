@@ -1,10 +1,10 @@
 list=$(playerctl -l)
 rofi_cmd() {
-	$list | rofi -dmenu
+	echo "$list" | rofi -dmenu
 }
-player="$(rofi_cmd)"
+player=$(rofi_cmd)
 if [ "$player" == "" ]; then
-	echo $(echo $list | head -1) > /tmp/playerctl_player
+	echo "$list" | head -1 > /tmp/playerctl_player
 else
-	echo $(player) > /tmp/playerctl_player
+	echo "$player" > /tmp/playerctl_player
 fi
