@@ -86,4 +86,15 @@ require("lazy").setup({
 	{ 'saadparwaiz1/cmp_luasnip' },
 	{ 'L3MON4D3/LuaSnip' },
 
+	{
+		'folke/zen-mode.nvim',
+		config = function()
+			require('zen-mode').setup {}
+		end
+	},
+
+	{
+		'iamcco/markdown-preview.nvim',
+		build = function () vim.fn["mkdp#util#install"] () end
+	}
 })
