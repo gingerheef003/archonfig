@@ -178,4 +178,4 @@ XF86Audio{Lower,Raise}Volume
 
 # Media controls
 super + slash
-	$HOME/.scripts/playerctl_control.sh
+	$HOME/.scripts/playerctl_player_selector.sh
