@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Wallpaper
-feh --bg-scale --randomize $HOME/Pictures/WPs/electric.png
+feh --bg-scale --randomize $HOME/Pictures/WPs/street.jpg
 
 # Picom
 picom -b
