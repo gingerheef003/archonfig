@@ -158,6 +158,10 @@ super + shift + slash
 super + shift + s
 	flameshot gui
 
+# Colorpicker
+super + shift + a
+	colorpicker --short --one-shot --preview | tr -d '\n' | xsel -b
+
 # Media #
 
 # Toggle mute
