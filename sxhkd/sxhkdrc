@@ -12,7 +12,7 @@ super + @space
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd; $HOME/.scripts/config_reload.sh sxhkd
+	pkill -USR1 -x sxhkd; $HOME/.local/bin/config_reload.sh sxhkd
 
 #
 # bspwm hotkeys
@@ -140,7 +140,7 @@ super + shift + f ; j
 
 # Brightness
 XF86MonBrightness{Down,Up}
-	$HOME/.scripts/brightness_control.sh {down,up}
+	$HOME/.local/bin/brightness_control.sh {down,up}
 
 # File Manager
 super + e
@@ -148,11 +148,11 @@ super + e
 
 # Scratchpad
 alt + Return
-	$HOME/.scripts/scratchpad.sh
+	$HOME/.local/bin/scratchpad.sh
 
 # Help
 super + shift + slash
-	$HOME/.scripts/sxhkd_help.sh
+	$HOME/.local/bin/sxhkd_help.sh
 
 # Screenshot
 super + shift + s
@@ -166,7 +166,7 @@ super + shift + a
 
 # Toggle mute
 XF86AudioMute
-	$HOME/.scripts/volume_control.sh mute
+	$HOME/.local/bin/volume_control.sh mute
 
 # Toggle mic mute
 XF86AudioMicMute
@@ -174,8 +174,8 @@ XF86AudioMicMute
 
 # Change volume
 XF86Audio{Lower,Raise}Volume
-	$HOME/.scripts/volume_control.sh {lower,raise}
+	$HOME/.local/bin/volume_control.sh {lower,raise}
 
 # Media controls
 super + slash
-	$HOME/.scripts/playerctl_player_selector.sh
+	$HOME/.local/bin/playerctl_player_selector.sh
