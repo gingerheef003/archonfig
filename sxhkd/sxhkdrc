@@ -162,6 +162,10 @@ super + shift + s
 super + shift + a
 	colorpicker --short --one-shot --preview | tr -d '\n' | xsel -b
 
+# Betterlockscreen
+alt + shift + x
+	betterlockscreen -l blur
+
 # Media #
 
 # Toggle mute

@@ -16,7 +16,7 @@ quiet=false
 # default theme
 loginbox=00000066
 loginshadow=00000000
-locktext="Type password to unlock..."
+locktext="Type pass to enter..."
 font="sans-serif"
 ringcolor=ffffffff
 insidecolor=00000000
@@ -26,7 +26,7 @@ insidevercolor=00000000
 ringwrongcolor=ffffffff
 insidewrongcolor=d23c3dff
 timecolor=ffffffff
-time_format="%H:%M:%S"
+time_format="%H:%M"
 greetercolor=ffffffff
 layoutcolor=ffffffff
 keyhlcolor=d23c3dff
@@ -35,3 +35,5 @@ verifcolor=ffffffff
 wrongcolor=d23c3dff
 modifcolor=d23c3dff
 bgcolor=000000ff
+
+lockargs+=(--ignore-empty-password)
