@@ -40,7 +40,7 @@ require("lazy").setup({
 
 	{ "mrjones2014/nvim-ts-rainbow" },
 
-	{ "lukas-reineke/indent-blankline.nvim" },
+	{ "lukas-reineke/indent-blankline.nvim", main="ibl", opts = {} },
 
 	{
 		'nvim-telescope/telescope.nvim',
@@ -84,7 +84,7 @@ require("lazy").setup({
 	{ 'hrsh7th/cmp-cmdline' },
 
 	{ 'saadparwaiz1/cmp_luasnip' },
-	{ 'L3MON4D3/LuaSnip' },
+	{ 'L3MON4D3/LuaSnip', version = "v2.*", build="make install_jsregexp" },
 
 	{
 		'folke/zen-mode.nvim',
@@ -96,5 +96,7 @@ require("lazy").setup({
 	{
 		'iamcco/markdown-preview.nvim',
 		build = function () vim.fn["mkdp#util#install"] () end
-	}
+	},
+
+	{ 'lewis6991/gitsigns.nvim' }
 })
