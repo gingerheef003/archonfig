@@ -22,7 +22,7 @@ libinput-gestures-setup start
 #$HOME/.scripts/brightness_control_startup.sh
 
 # Network Manager
-#nm-applet &
+nm-applet &
 
 # Show Off
 # alacritty --hold -e $HOME/.scripts/show_off.sh &
@@ -44,6 +44,7 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a Spotify desktop='^10'
 
 bspc rule -a firefox:Devtools state=floating rectangle=800x500+1920+290
 
