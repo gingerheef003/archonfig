@@ -1,0 +1,80 @@
+* {
+		bg: #111210;
+		bg-alt: #444b6a;
+
+		fg: #ffffff;
+		fg-alt: #787c99;
+
+		background-color: @bg;
+
+		border: 0;
+		margin: 0;
+		padding: 0;
+		spacing: 0;
+}
+
+window {
+		width: 35%;
+}
+
+
+mainbox {
+		background-color: @bg;
+		children: [inputbar, listview];
+}
+
+
+
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry ];
+		background-color: @bg-alt;
+		padding: 10px;
+}
+prompt {
+		vertical-align: 0.5;
+		background-color: @bg-alt;
+		enabled: true;
+		padding: 0 5px;
+		text-color: @fg;
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ">";
+		vertical-align: 0.5;
+    margin:     0px 5px ;
+    text-color: @fg;
+		background-color: @bg-alt;
+}
+entry {
+		vertical-align: 0.5;
+		text-color: @fg;
+		background-color: @bg-alt;
+}
+
+listview {
+		background-color: @bg;
+		columns: 1;
+		lines: 8;
+}
+element {
+    padding: 12;
+		text-color: @fg-alt;
+}
+element selected {
+		text-color: @fg;
+}
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+		vertical-align: 0.5;
+}
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: @fg;
+    handle-width: 8px ;
+    padding:      0;
+}
+
+
+
