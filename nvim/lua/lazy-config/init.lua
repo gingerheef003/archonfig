@@ -38,18 +38,22 @@ require("lazy").setup({
 
 	{ "RRethy/nvim-treesitter-endwise" },
 
+	{ 'nvim-treesitter/nvim-treesitter-refactor' },
+
 	{ "mrjones2014/nvim-ts-rainbow" },
 
 	{ "lukas-reineke/indent-blankline.nvim", main="ibl", opts = {} },
 
 	{
 		'nvim-telescope/telescope.nvim',
-		tag = '0.1.1',
+		tag = '0.1.6',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 
 	{
 		'nvim-tree/nvim-tree.lua',
+		version = '*',
+		lazy = false,
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
 
@@ -82,6 +86,7 @@ require("lazy").setup({
 	{ 'hrsh7th/cmp-buffer' },
 	{ 'hrsh7th/cmp-path' },
 	{ 'hrsh7th/cmp-cmdline' },
+	{ 'rafamadriz/friendly-snippets' },
 
 	{ 'saadparwaiz1/cmp_luasnip' },
 	{ 'L3MON4D3/LuaSnip', version = "v2.*", build="make install_jsregexp" },
@@ -98,5 +103,16 @@ require("lazy").setup({
 		build = function () vim.fn["mkdp#util#install"] () end
 	},
 
-	{ 'lewis6991/gitsigns.nvim' }
+	{ 'lewis6991/gitsigns.nvim' },
+
+	{
+		'stevearc/dressing.nvim',
+		event = 'VeryLazy',
+		opts = {},
+	},
+
+	{
+		'rcarriga/nvim-notify',
+		config = function () vim.notify = require('notify') end
+	},
 })
