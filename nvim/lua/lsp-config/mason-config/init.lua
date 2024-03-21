@@ -1,4 +1,5 @@
 require('mason').setup({
+	PATH = "prepend",
 	ui = {
 		border = "double",
 		icons = {
@@ -10,5 +11,5 @@ require('mason').setup({
 })
 
 require('mason-lspconfig').setup({
-	ensure_installed = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' },
+	ensure_installed = { 'lua_ls', 'clangd', 'rust_analyzer', 'pyright', 'tsserver' },
 })
