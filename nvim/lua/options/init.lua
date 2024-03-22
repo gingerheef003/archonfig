@@ -34,7 +34,6 @@ vim.keymap.set({'', 'i'}, '<F2>', '<cmd>write<cr>', {desc = 'Save'})
 vim.keymap.set({'', 'i'}, '<F3>', '<cmd>NvimTreeFocus<cr>', {desc = 'Explorer'})
 vim.keymap.set({'', 'i'}, '<F4>', '<cmd>q<cr>', {desc = 'Quit'})
 
-
 -- travel through buffer
 vim.keymap.set({''}, '<leader>b', '<cmd>ls<cr>', {desc = 'Next Buffer'})
 vim.keymap.set({''}, '<leader>n', '<cmd>bn<cr>', {desc = 'Next Buffer'})
