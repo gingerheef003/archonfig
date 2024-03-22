@@ -4,6 +4,7 @@ local opt = vim.opt
 
 -- basic options
 opt.number = true
+opt.relativenumber = true
 opt.mouse = 'a'
 opt.cursorline = true
 
