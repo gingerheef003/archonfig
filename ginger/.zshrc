@@ -96,7 +96,6 @@ alias t="tree"
 # Suffix Aliases
 alias -s txt=vim
 
-
 # History
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1024
@@ -108,7 +107,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Aadding path
-export PATH=/home/ginger/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.tmuxifier/bin:$PATH
 
 # Virtual Environment
 if [[ -f ./venv/bin/activate ]]; then
@@ -120,3 +120,6 @@ function cd() {
 		source ./venv/bin/activate
 	fi
 }
+
+# nvim
+export EDITOR=nvim

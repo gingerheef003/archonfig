@@ -30,15 +30,15 @@ vim.g.mapleader = ' '
 
 
 -- functions
-vim.keymap.set({'', 'i'}, '<F2>', '<cmd>write<cr>', {desc = 'Save'})
-vim.keymap.set({'', 'i'}, '<F3>', '<cmd>NvimTreeFocus<cr>', {desc = 'Explorer'})
-vim.keymap.set({'', 'i'}, '<F4>', '<cmd>q<cr>', {desc = 'Quit'})
+vim.keymap.set({'', 'i'}, '<F2>', ':write<cr>', {desc = 'Save'})
+vim.keymap.set({'', 'i'}, '<F3>', ':NvimTreeFocus<cr>', {desc = 'Explorer'})
+vim.keymap.set({'', 'i'}, '<F4>', ':q<cr>', {desc = 'Quit'})
 
 -- travel through buffer
-vim.keymap.set({''}, '<leader>b', '<cmd>ls<cr>', {desc = 'Next Buffer'})
-vim.keymap.set({''}, '<leader>n', '<cmd>bn<cr>', {desc = 'Next Buffer'})
-vim.keymap.set({''}, '<leader>N', '<cmd>bp<cr>', {desc = 'Previous Buffer'})
-vim.keymap.set({''}, '<leader>d', '<cmd>bd<cr>', {desc = 'Delete Buffer'})
+vim.keymap.set({''}, '<leader>b', ':ls<cr>', {desc = 'Next Buffer'})
+vim.keymap.set({''}, '<leader>n', ':bn<cr>', {desc = 'Next Buffer'})
+vim.keymap.set({''}, '<leader>N', ':bp<cr>', {desc = 'Previous Buffer'})
+vim.keymap.set({''}, '<leader>d', ':bd<cr>', {desc = 'Delete Buffer'})
 
 -- sudo edit enable
 vim.keymap.set('c','W',"<esc>:lua require'utils'.sudo_write()<CR>", { silent = true })
