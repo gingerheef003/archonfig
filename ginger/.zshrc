@@ -123,3 +123,7 @@ function cd() {
 
 # nvim
 export EDITOR=nvim
+
+# ctrl-backspace and ctrl-delete
+bindkey '^H' backward-kill-word
+# bindkey '5~' kill-word
