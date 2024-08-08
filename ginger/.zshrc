@@ -94,7 +94,8 @@ alias la="ls --color -la"
 alias t="tree"
 
 # Suffix Aliases
-alias -s txt=vim
+alias -s txt=nvim
+
 
 # History
 export HISTFILE=~/.zsh_history
@@ -109,6 +110,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Aadding path
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.tmuxifier/bin:$PATH
+export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin:$PATH
+# mpi
+# export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/comm_libs/mpi/bin:$PATH
 
 # Virtual Environment
 if [[ -f ./venv/bin/activate ]]; then
