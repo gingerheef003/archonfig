@@ -74,6 +74,7 @@ alias v='vim'
 alias nv="nvim"
 alias p="sudo pacman -S"
 alias pu="sudo pacman -Syu"
+alias cat="bat"
 
 # Git Aliases
 alias g="git"
