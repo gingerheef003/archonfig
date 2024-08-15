@@ -30,9 +30,9 @@ vim.g.mapleader = ' '
 
 
 -- functions
-vim.keymap.set({'', 'i'}, '<F2>', ':write<cr>', {desc = 'Save'})
-vim.keymap.set({'', 'i'}, '<F3>', ':NvimTreeFocus<cr>', {desc = 'Explorer'})
-vim.keymap.set({'', 'i'}, '<F4>', ':q<cr>', {desc = 'Quit'})
+vim.keymap.set({'', 'i'}, '<F2>', '<cmd>write<cr>', {desc = 'Save'})
+vim.keymap.set({'', 'i'}, '<F3>', '<cmd>NvimTreeFocus<cr>', {desc = 'Explorer'})
+vim.keymap.set({'', 'i'}, '<F4>', '<cmd>q<cr>', {desc = 'Quit'})
 
 -- travel through buffer
 vim.keymap.set({''}, '<leader>b', ':ls<cr>', {desc = 'Next Buffer'})
