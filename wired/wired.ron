@@ -12,8 +12,8 @@
 	//history_length: 10,
 	//focus_follows: Mouse,
 	//print_to_file: "/tmp/wired.log",
-	//min_window_width: 1,
-	//min_window_height: 1,
+	min_window_width: 1,
+	min_window_height: 1,
 	debug: false,
 	debug_color: Color(r: 0.0, g: 1.0, b: 0.0, a: 1.0), // Primary color for debug rectangles.
 	debug_color_alt: Color(r: 1.0, g: 0.0, b: 0.0, a: 1.0), // Secondary color for debug rectangles.
@@ -28,7 +28,7 @@
 			//render_criteria: [HintImage, AppImage],
 			params: NotificationBlock((
 				monitor: 0,
-				border_width: 2.0,
+				border_width: 3.0,
 				border_rounding: 3.0,
 				//background_color: Color(r: 0.15686, g: 0.15686, b: 0.15686, a: 1.0),
 				background_color: Color(hex: "#11111B"),
@@ -56,11 +56,25 @@
 				filter_mode: Lanczos3,
 			)),
 		),
-
 		(
-			name: "app_summary",
+			name: "app_icon",
 			parent: "app_image",
 			hook: Hook(parent_anchor: MR, self_anchor: BL),
+			offset: Vec2(x: 0.0, y: 0.0),
+			params: ImageBlock((
+				image_type: App,
+				// We actually want 4px padding, but the border is 3px.
+				padding: Padding(left: 3.0, right: 3.0, top: 3.0, bottom: 3.0),
+				rounding: 4.0,
+				scale_width: 64,
+				scale_height: 64,
+				filter_mode: Lanczos3,
+			)),
+		),
+		(
+			name: "app_summary",
+			parent: "app_icon",
+			hook: Hook(parent_anchor: BR, self_anchor: BL),
 			offset: Vec2(x: 0.0, y: 0.0),
 			// https://github.com/Toqozz/wired-notify/wiki/TextBlock
 			params: TextBlock((
@@ -69,7 +83,7 @@
 				ellipsize: Middle,
 				color: Color(hex: "#CBA6F7"),
 				color_hovered: Color(hex: "#A38AC2"),
-				padding: Padding(left: 7.0, right: 7.0, top: 7.0, bottom: 7.0),
+				padding: Padding(left: 10.0, right: 7.0, top: 10.0, bottom: 5.0),
 				dimensions: (width: (min: 50, max: 150), height: (min: 0, max: 0)),
 			)),
 		),
@@ -87,7 +101,7 @@
 				font: "Arial 10",
 				color: Color(hex: "#CBA6F7"),
 				color_hovered: Color(hex: "#A38AC2"),
-				padding: Padding(left: 7.0, right: 7.0, top: 7.0, bottom: 7.0),
+				padding: Padding(left: 10.0, right: 7.0, top: 5.0, bottom: 10.0),
 				width: (min: 150, max: 250),
 				scroll_speed: 0.1,
 				lhs_dist: 35.0,
@@ -98,7 +112,7 @@
 
 		(
 			name: "app_progress",
-			parent: "app_summary",
+			parent: "app_body",
 			offset: Vec2(x: 0.0, y: 0.0),
 			hook: Hook(parent_anchor: BL, self_anchor: TL),
 			render_criteria: [Progress],
