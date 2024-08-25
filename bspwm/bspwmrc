@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.fehbg &
 
 # Picom
-picom -b
+picom &
 
 # Dunst
 # /usr/bin/dunst &
