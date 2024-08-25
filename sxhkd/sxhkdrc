@@ -187,6 +187,22 @@ XF86AudioMicMute
 XF86Audio{Lower,Raise}Volume
 	$HOME/.local/bin/volume_control.sh {lower,raise}
 
+# Play/Pause
+XF86AudioPlay
+	playerctl play-pause
+
+# Stop
+XF86audioStop
+	playerctl stop
+
+# Next track
+XF86AudioNext
+	playerctl next
+
+# Prev track
+XF86AudioPrev
+	playerctl prev
+
 # Media controls
 super + slash
 	$HOME/.local/bin/playerctl_player_selector.sh
