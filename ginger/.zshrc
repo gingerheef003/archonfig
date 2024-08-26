@@ -108,9 +108,9 @@ setopt HIST_IGNORE_SPACE
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Aadding path
+# Adding path
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.tmuxifier/bin:$PATH
+export PATH=$HOME/.tmux/plugins/tmuxifier/bin:$PATH
 export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin:$PATH
 # mpi
 # export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/comm_libs/mpi/bin:$PATH
