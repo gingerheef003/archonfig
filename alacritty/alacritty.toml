@@ -34,18 +34,18 @@ TERM = "alacritty"
 TERMINAL = "alacritty"
 
 [font]
-size = 6.5
+size = 7
 
 [font.bold]
-family = "Hack Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Hack Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [[keyboard.bindings]]
