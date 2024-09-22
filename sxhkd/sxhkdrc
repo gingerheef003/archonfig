@@ -139,10 +139,10 @@ super + shift + m
 
 # Firefox Launcher
 super + shift + f ; {g,h,k,w}
-	firefox -P {"Govind G S","Gatter Heem","ME21B065", "Govind G S" --new-window https://web.whatsapp.com}
+	firefox -P {"Personal","Gatter Heem","College", "Personal" --new-window https://web.whatsapp.com}
 
 super + shift + f ; j
-	firefox-developer-edition -P "Ginger Heef"
+	firefox-developer-edition -P "Coding"
 
 # Brightness
 XF86MonBrightness{Down,Up}
