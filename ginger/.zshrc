@@ -137,3 +137,8 @@ EDITOR=nvim
 # ctrl-backspace and ctrl-delete
 bindkey '^H' backward-kill-word
 bindkey '^[[3;5~' kill-word
+
+
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+    exec startx
+fi
