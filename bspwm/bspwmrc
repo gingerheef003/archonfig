@@ -47,6 +47,9 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Spotify desktop='^10'
 
 bspc rule -a firefox:Devtools state=floating rectangle=800x500+1920+290
+bspc rule -a firefox-developer-edition:Devtools state=floating rectangle=800x500+1920+290
+bspc rule -a firefox:Navigator "WM_NAME=Sign In - Google Accounts — Firefox Developer Edition" state=floating 
+bspc rule -a firefox-developer-edition:Navigator "WM_NAME=Sign In - Google Accounts — Firefox Developer Edition" state=floating 
 
 # Scratchpad
 bspc rule -a scratchpad sticky=on state=floating
